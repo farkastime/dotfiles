@@ -1,24 +1,8 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$PATH:/Users/timf/google-cloud-sdk/bin
-
-# set JAVA_HOME location 
-export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
-
-# alias project paths
-alias ntis='cd ~/Resilient\ Solutions\ 21/Account\ Admin\ -\ RS21/Projects/19RS071\ -\ NTIS\ NRMC/'
-
-# alias program locations
-alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
-
-# add pip.rs21.io as extra URL for pip installs 
-export PIP_EXTRA_INDEX_URL=https://pip.rs21.io
-
-# add username and password for MOTHR libraries
-export MOTHR_USERNAME=tfarkas
-export MOTHR_PASSWORD=changeme
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Tex/texbin
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/timf/.oh-my-zsh"
+export ZSH="/Users/tim/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -115,10 +99,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Google BigQuery Credentials
-export GOOGLE_APPLICATION_CREDENTIALS="/Users/timf/auth.json"
 
-# make enter directory
-mkcd() {
-	mkdir "$1"
-	cd "$1"
-}
+
+export PATH="/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/3.0.0/bin:$PATH"
+export PATH="$HOME/.gem/ruby/3.1.0/bin:$PATH"
