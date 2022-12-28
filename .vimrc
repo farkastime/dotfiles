@@ -7,7 +7,7 @@ Plug 'preservim/nerdtree'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'lervag/vimtex'
-Plug 'sirver/ultisnips'
+"Plug 'sirver/ultisnips'
 Plug 'dusans/vim-hardmode'
 Plug 'jalvesaq/Nvim-R'
 call plug#end()
