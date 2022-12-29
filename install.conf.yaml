@@ -9,5 +9,6 @@
     ~/.vimrc: vimrc
     ~/.zshrc: zshrc
     ~/.Rprofile: Rprofile
+    ~/.zprofile: zprofile
 
 
