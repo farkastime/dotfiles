@@ -10,6 +10,8 @@ Plug 'lervag/vimtex'
 "Plug 'sirver/ultisnips'
 Plug 'dusans/vim-hardmode'
 Plug 'jalvesaq/Nvim-R'
+"Plug 'vim-airline/vim-airline'
+"Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
 filetype plugin on
