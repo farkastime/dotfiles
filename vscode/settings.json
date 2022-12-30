@@ -6,5 +6,6 @@
           "after": ["<Esc>", "l"]
         }
       ],
+      "tabnine.experimentalAutoImports": true,
 }      
 

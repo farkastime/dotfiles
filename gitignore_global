@@ -1,2 +1,5 @@
 # macos artifacts
 .DS_Store
+
+# Jupyter
+.ipynb_checkpoints
