@@ -1,0 +1,10 @@
+{
+    "notebook.lineNumbers": "on"
+    "vim.insertModeKeyBindings": [
+        {
+          "before": ["j", "k"],
+          "after": ["<Esc>", "l"]
+        }
+      ]
+}
+
