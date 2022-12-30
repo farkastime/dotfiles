@@ -11,5 +11,6 @@
     ~/.Rprofile: Rprofile
     ~/.zprofile: zprofile
     ~/.gitconfig: gitconfig
+    ~/.gitignore_global: gitignore_global
 
 
