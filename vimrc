@@ -25,7 +25,7 @@ let mapleader="-"
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
 inoremap jk <esc> 
-vnoremap jk <esc> 
+"vnoremap jk <esc> "this causes lag when navigating down
 "remapping <esc> to <nop> causes major issues. this is a hack!
 inoremap <esc><nop> <nop>
 vnoremap <esc><nop> <nop>

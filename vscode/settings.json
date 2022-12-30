@@ -6,11 +6,5 @@
           "after": ["<Esc>", "l"]
         }
       ],
-    "vim.visualModeKeyBindings": [
-        {
-          "before": ["j", "k"],
-          "after": ["<Esc>"]
-        }
-      ]
 }      
 
