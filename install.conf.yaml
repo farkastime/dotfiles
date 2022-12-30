@@ -10,5 +10,6 @@
     ~/.zshrc: zshrc
     ~/.Rprofile: Rprofile
     ~/.zprofile: zprofile
+    ~/.gitconfig: gitconfig
 
 
