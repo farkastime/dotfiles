@@ -1,1 +1,2 @@
-Brewfile.lock.json # has OS-specific data
+# lock file has OS-specific content
+Brewfile.lock.json
