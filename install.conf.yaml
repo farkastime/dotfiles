@@ -13,3 +13,7 @@
     ~/.gitconfig: gitconfig
     ~/.gitignore_global: gitignore_global
     ~/Library/Application Support/Code/User/settings.json: vscode/settings.json
+    ~/.oh-my-zsh/custom/themes/powerlevel10k: themes/powerlevel10k
+
+      #- shell:
+      #  - [brew bundle]
