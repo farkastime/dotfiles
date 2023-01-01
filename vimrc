@@ -39,6 +39,7 @@ nnoremap <Up> <nop>
 nnoremap <Down> <nop>
 
 " options
+set viminfo+=n~/.history/.viminfo
 set laststatus=2 	" lightline requirement; always show status line
 set mouse=a  		" change cursor per mode
 set number  		" always show current line number

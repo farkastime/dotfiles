@@ -12,7 +12,10 @@ eval "$(pyenv init -)"
 
 # zsh configuration
 export ZSH="$HOME/.oh-my-zsh"
+
+# change history file locations
 export HISTFILE="$HOME/.history/.zsh_history"
+export LESSHISTFILE="$HOME/.history/.less_history"
 
 #ZSH_THEME="robbyrussell"
 ZSH_THEME="powerlevel10k/powerlevel10k"
