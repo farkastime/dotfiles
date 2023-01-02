@@ -26,6 +26,7 @@ plugins=(git
 
 source $ZSH/oh-my-zsh.sh
 
+# custom keybindings
 bindkey -M viins 'jk' vi-cmd-mode # map jk to ESC in zsh vi mode
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
