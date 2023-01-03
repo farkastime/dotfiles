@@ -9,6 +9,7 @@ brew "xz"
 brew "zlib"
 brew "tcl-tk"
 brew "gdal"
+brew "htop"
 
 # standalone programs
 # cask "visual-studio-code"
