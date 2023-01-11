@@ -16,7 +16,7 @@
     ~/.p10k.zsh: themes/p10k.zsh
 
 - shell:
-  #- brew bundle
+  #- brew bundle # don't do this automatically with install
   - 
     command: 
       if ! test -d ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k; 

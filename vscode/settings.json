@@ -1,11 +1,40 @@
 {
     "notebook.lineNumbers": "on",
+    "vim.useSystemClipboard": "true",
     "vim.insertModeKeyBindings": [
         {
           "before": ["j", "k"],
           "after": ["<Esc>", "l"]
         }
       ],
+    "vim.normalModeKeyBindings": [
+        {
+          "before": ["<leader>", "p"],
+          "after": [":", "s", "/", "^", "/", "p", "r", "i", "n", "t", "(", "/", "<Cr>", ":", "s", "/", "$", "/", ")", "/", "<Cr>"]
+        },
+        {
+          "before": ["<leader>", "P"], 
+          "after": [":", "s", "/", "^", "p", "r", "i", "n", "t", "(", "/", "/", "<Cr>", "$", "x", "0"]
+        }
+      ],
       "tabnine.experimentalAutoImports": true,
+      "yaml.schemas": {
+        "file:///Users/tfarkas/.vscode/extensions/atlassian.atlascode-3.0.0/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+      },
+      "atlascode.bitbucket.enabled": false,
+      "redhat.telemetry.enabled": false,
+      "atlascode.jira.jqlList": [
+        {
+          "id": "45edbbb6-2d12-427a-9451-4a2ed5ad0920",
+          "enabled": true,
+          "name": "My esource Issues",
+          "query": "assignee = currentUser() AND resolution = Unresolved ORDER BY lastViewed DESC",
+          "siteId": "dc949908-432e-4448-84d4-ae9ee8ae103f",
+          "monitor": true
+        }
+      ],
+      "terminal.integrated.inheritEnv": false,
+      "notebook.output.textLineLimit": 50,
+      "window.zoomLevel": 1,
 }      
 

@@ -35,3 +35,21 @@ bindkey -M viins 'jk' vi-cmd-mode # map jk to ESC in zsh vi mode
 # direnv
 eval "$(direnv hook zsh)"
 
+# ssh agent
+eval $(ssh-agent) &>/dev/null
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/tfarkas/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/tfarkas/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/tfarkas/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/tfarkas/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
