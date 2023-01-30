@@ -1,6 +1,6 @@
 {
     "notebook.lineNumbers": "on",
-    "vim.useSystemClipboard": "true",
+    "vim.debug.loggingLevelForConsole": "debug",
     "vim.insertModeKeyBindings": [
         {
           "before": ["j", "k"],
@@ -15,11 +15,15 @@
         {
           "before": ["<leader>", "P"], 
           "after": [":", "s", "/", "^", "p", "r", "i", "n", "t", "(", "/", "/", "<Cr>", "$", "x", "0"]
+        }, 
+        {
+          "before": ["<leader>", "k"], 
+          "commands": [":s/a/A"]
         }
       ],
       "tabnine.experimentalAutoImports": true,
       "yaml.schemas": {
-        "file:///Users/tfarkas/.vscode/extensions/atlassian.atlascode-3.0.0/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+        "file:///Users/tfarkas/.vscode/extensions/atlassian.atlascode-3.0.1/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
       },
       "atlascode.bitbucket.enabled": false,
       "redhat.telemetry.enabled": false,
@@ -36,5 +40,7 @@
       "terminal.integrated.inheritEnv": false,
       "notebook.output.textLineLimit": 50,
       "window.zoomLevel": 1,
+      "notebook.diff.ignoreOutputs": true,
+      "diffEditor.ignoreTrimWhitespace": false,
 }      
 
