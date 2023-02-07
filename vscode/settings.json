@@ -7,20 +7,6 @@
           "after": ["<Esc>", "l"]
         }
       ],
-    "vim.normalModeKeyBindings": [
-        {
-          "before": ["<leader>", "p"],
-          "after": [":", "s", "/", "^", "/", "p", "r", "i", "n", "t", "(", "/", "<Cr>", ":", "s", "/", "$", "/", ")", "/", "<Cr>"]
-        },
-        {
-          "before": ["<leader>", "P"], 
-          "after": [":", "s", "/", "^", "p", "r", "i", "n", "t", "(", "/", "/", "<Cr>", "$", "x", "0"]
-        }, 
-        {
-          "before": ["<leader>", "k"], 
-          "commands": [":s/a/A"]
-        }
-      ],
       "tabnine.experimentalAutoImports": true,
       "yaml.schemas": {
         "file:///Users/tfarkas/.vscode/extensions/atlassian.atlascode-3.0.1/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
@@ -38,9 +24,16 @@
         }
       ],
       "terminal.integrated.inheritEnv": false,
-      "notebook.output.textLineLimit": 50,
+      "notebook.output.textLineLimit": 200,
       "window.zoomLevel": 1,
       "notebook.diff.ignoreOutputs": true,
       "diffEditor.ignoreTrimWhitespace": false,
+      "typescript.suggest.paths": false,
+      "javascript.suggest.paths": false,
+      "workbench.startupEditor": "none",
+      "[quarto]": {
+        "editor.suggest.showSnippets": true,
+        "editor.snippetSuggestions": "inline"
+      }
 }      
 

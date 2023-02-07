@@ -1,0 +1,24 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "ctrl+enter",
+        "command": "quarto.runCurrentCell",
+        "when": "editorTextFocus && !findInputFocussed && !replaceInputFocussed && editorLangId == 'quarto'"
+    },
+    {
+        "key": "ctrl+shift+enter",
+        "command": "extension.multiCommand.execute",
+        "args": {
+            "sequence": [
+                "quarto.runCurrentCell",
+                "quarto.goToNextCell"
+            ]
+        },
+        "when": "editorTextFocus && !findInputFocussed && !replaceInputFocussed && editorLangId == 'quarto'"
+    },
+    {
+        "key": "shift+cmd+enter",
+        "command": "-quarto.runCurrentCell",
+        "when": "editorTextFocus && !findInputFocussed && !replaceInputFocussed && editorLangId == 'quarto'"
+    }
+]
