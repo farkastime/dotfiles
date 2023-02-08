@@ -22,7 +22,7 @@
         "when": "editorTextFocus && !findInputFocussed && !replaceInputFocussed && editorLangId == 'quarto'"
     },
     {
-        "key": "cmd+shift+p",
+        "key": "ctrl+shift+p",
         "command": "editor.action.insertSnippet",
         "when": "editorTextFocus",
         "args": {
@@ -31,7 +31,7 @@
         }
       },
     {
-        "key": "cmd+shift+r",
+        "key": "ctrl+shift+r",
         "command": "editor.action.insertSnippet",
         "when": "editorTextFocus",
         "args": {

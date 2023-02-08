@@ -16,18 +16,16 @@
 		"prefix": "`p",
 		"body": [
 			"```{python}",
-			"#| label: $1",
-			"$0",
+			"${1:#| label:}$0",
 			"```"
 		],
 		"description": "Insert Python Code Chunk"
 	},
 	"insertRChunk": {
-		"prefix": "`p",
+		"prefix": "`r",
 		"body": [
 			"```{r}",
-			"#| label: $1",
-			"$0",
+			"${1:#| label:}$0",
 			"```"
 		],
 		"description": "Insert R Code Chunk"
