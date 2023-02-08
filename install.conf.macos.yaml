@@ -1,0 +1,32 @@
+- defaults:
+    link:
+      relink: true
+      force: true
+
+- clean: ['~']
+
+- link:
+    ~/.vimrc: vimrc
+    ~/.zshrc: zshrc
+    ~/.Rprofile: Rprofile
+    ~/.zprofile: zprofile
+    ~/.gitconfig: gitconfig
+    ~/.gitignore_global: gitignore_global
+    ~/Library/Application Support/Code/User/settings.json: vscode/settings.json
+    ~/Library/Application Support/Code/User/keybindings.json: vscode/keybindings.json
+    ~/.p10k.zsh: themes/p10k.zsh
+
+- shell:
+  #- brew bundle # don't do this automatically with install
+  - 
+    command:
+      cat ~/.dotfiles/vscode/extensions | xargs -L 1 code --install-extension
+    stdout: true
+    stderr: true
+  - 
+    command: 
+      if ! test -d ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k; 
+      then git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k; 
+      fi
+    stdout: true
+    stderr: true
