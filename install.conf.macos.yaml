@@ -20,7 +20,7 @@
   #- brew bundle # don't do this automatically with install
   - 
     command:
-      cat ~/.dotfiles/vscode/extensions | xargs -L 1 code --install-extension
+      cat ~/.dotfiles/vscode/extensions.macos | xargs -L 1 code --install-extension
     stdout: true
     stderr: true
   - 
