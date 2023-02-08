@@ -27,8 +27,16 @@
         "when": "editorTextFocus",
         "args": {
           "langId": "quarto",
-          "name": "Insert Python Chunk"
+          "name": "insertPythonChunk"
+        }
+      },
+    {
+        "key": "cmd+shift+r",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus",
+        "args": {
+          "langId": "quarto",
+          "name": "insertRChunk"
         }
       }
-      
 ]
