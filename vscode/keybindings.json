@@ -20,5 +20,15 @@
         "key": "shift+cmd+enter",
         "command": "-quarto.runCurrentCell",
         "when": "editorTextFocus && !findInputFocussed && !replaceInputFocussed && editorLangId == 'quarto'"
-    }
+    },
+    {
+        "key": "cmd+shift+p",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus",
+        "args": {
+          "langId": "quarto",
+          "name": "Insert Python Chunk"
+        }
+      }
+      
 ]
