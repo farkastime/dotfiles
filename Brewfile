@@ -11,6 +11,7 @@ brew "tcl-tk"
 brew "git"
 brew "gdal"
 brew "htop"
+brew "code"
 
 # standalone programs
 cask "visual-studio-code"

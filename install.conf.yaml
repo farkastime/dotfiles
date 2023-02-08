@@ -19,6 +19,11 @@
 - shell:
   #- brew bundle # don't do this automatically with install
   - 
+    command:
+      cat ~/.dotfiles/vscode/extensions | xargs -L 1 code --install-extension
+    stdout: true
+    stderr: true
+  - 
     command: 
       if ! test -d ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k; 
       then git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k; 
