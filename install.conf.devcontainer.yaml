@@ -13,15 +13,3 @@
     ~/.gitconfig: gitconfig
     ~/.gitignore_global: gitignore_global
     ~/.p10k.zsh: themes/p10k.zsh
-
-- shell:
-  - 
-    command: 
-      git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
-    stdout: true
-    stderr: true
-  - 
-    command: 
-      curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-    stdout: true
-    stderr: true
