@@ -32,6 +32,9 @@ bindkey -M viins 'jk' vi-cmd-mode # map jk to ESC in zsh vi mode
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+# for vim themes
+export TERM=xterm-256color
+
 # direnv
 #eval "$(direnv hook zsh)"
 
