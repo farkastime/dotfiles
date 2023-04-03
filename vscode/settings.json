@@ -9,7 +9,7 @@
       ],
       "tabnine.experimentalAutoImports": true,
       "yaml.schemas": {
-        "file:///Users/tfarkas/.vscode/extensions/atlassian.atlascode-3.0.1/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+        "file:///home/ec2-user/.vscode-server/extensions/atlassian.atlascode-3.0.2/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
       },
       "atlascode.bitbucket.enabled": false,
       "redhat.telemetry.enabled": false,
@@ -25,7 +25,6 @@
       ],
       "terminal.integrated.inheritEnv": false,
       "notebook.output.textLineLimit": 200,
-      "window.zoomLevel": 1,
       "notebook.diff.ignoreOutputs": true,
       "diffEditor.ignoreTrimWhitespace": false,
       "typescript.suggest.paths": false,
@@ -35,6 +34,26 @@
         "editor.suggest.showSnippets": true,
         "editor.snippetSuggestions": "inline"
       },
-      "quarto.mathjax.theme": "dark"
+      "quarto.mathjax.theme": "dark",
+      "dvc.doNotShowCliUnavailable": true,
+      "jupyter.askForKernelRestart": false,
+      "path-autocomplete.disableUpOneFolder": false, 
+      "path-autocomplete.pathMappings": {
+        "workspace": "${workspace}",
+    },
+    "[python]": {
+      "editor.formatOnType": true
+    },
+    "git.ignoreMissingGitWarning": true,
+    "git.autofetch": true,
+    "window.zoomLevel": 1,
+    "terminal.integrated.commandsToSkipShell": [
+      "language-julia.interrupt"
+    ],
+    "julia.symbolCacheDownload": true,
+    "julia.enableTelemetry": false,
+    "files.associations": {
+      "*.rmd": "markdown"
+    }
 }      
 
