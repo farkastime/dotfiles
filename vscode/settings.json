@@ -9,7 +9,7 @@
       ],
       "tabnine.experimentalAutoImports": true,
       "yaml.schemas": {
-        "file:///home/ec2-user/.vscode-server/extensions/atlassian.atlascode-3.0.3/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+        "file:///Users/tfarkas/.vscode/extensions/atlassian.atlascode-3.0.3/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
       },
       "atlascode.bitbucket.enabled": false,
       "redhat.telemetry.enabled": false,
@@ -42,11 +42,11 @@
         "workspace": "${workspace}",
     },
     "[python]": {
-      "editor.formatOnType": true
+      "editor.formatOnType": true,
+      "analysis.autoFormatStrings": true
     },
     "git.ignoreMissingGitWarning": true,
     "git.autofetch": true,
-    "window.zoomLevel": 1,
     "terminal.integrated.commandsToSkipShell": [
       "language-julia.interrupt"
     ],
@@ -56,5 +56,8 @@
       "*.rmd": "markdown"
     },
     "security.workspace.trust.untrustedFiles": "open",
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "window.zoomLevel": 1,
 }      
 
