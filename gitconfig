@@ -6,5 +6,6 @@
 	path = ~/.gitconfig_local
 [core]
 	excludesfile = ~/.gitignore_global
+    pager = cat
 [pull]
 	rebase = false
