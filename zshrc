@@ -40,3 +40,6 @@ export TERM=xterm-256color
 
 # ssh agent
 eval $(ssh-agent) &>/dev/null
+
+# source local file
+source "$HOME/.zshrc_local"

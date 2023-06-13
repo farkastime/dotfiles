@@ -59,5 +59,6 @@
     "terminal.integrated.defaultProfile.linux": "zsh",
     "terminal.integrated.defaultProfile.osx": "zsh",
     "window.zoomLevel": 1,
+    "remote.SSH.connectTimeout": 60,
 }      
 
