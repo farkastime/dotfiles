@@ -13,6 +13,7 @@
     ~/.gitconfig: gitconfig
     ~/.gitignore_global: gitignore_global
     ~/.p10k.zsh: themes/p10k.zsh
+
 - shell: 
   - 
   command: 
