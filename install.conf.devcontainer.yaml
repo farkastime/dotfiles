@@ -16,7 +16,7 @@
 
 - shell: 
   - 
-  command: 
-    touch ~/.zshrc_local
-  stdout: true
-  stderr: true
+    command: 
+      - touch ~/.zshrc_local
+    stdout: true
+    stderr: true
