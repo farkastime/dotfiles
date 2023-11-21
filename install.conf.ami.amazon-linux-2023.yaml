@@ -1,0 +1,48 @@
+- defaults:
+    link:
+      relink: true
+      force: true
+
+- clean: ['~']
+
+- link:
+    ~/.vimrc: vimrc
+    ~/.zshrc: zshrc
+    ~/.Rprofile: Rprofile
+    ~/.gitconfig: gitconfig
+    ~/.gitignore_global: gitignore_global
+    ~/.p10k.zsh: themes/p10k.zsh
+      
+- shell:
+  - 
+    command: # add local zshrc file for customization
+      touch ~/.zshrc_local
+  - 
+    command: # install basic utilities
+      sudo dnf -y install docker zsh util-linux-user
+  - 
+    command: # install oh my zsh, conditional on whether it's installed already
+      if [[ -z "$ZSH" ]]; then
+        echo ".oh-my-zsh does not exist!";
+        sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)";
+      fi
+    stdout: true
+    stderr: true
+  - 
+    command: # use zsh by default
+      sudo chsh -s $(which zsh) $(whoami)
+  - 
+    command: # install powerlevel10k terminal theme if not installed already
+      if ! test -d ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k; 
+      then git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k; 
+      fi
+    stdout: true
+    stderr: true
+  - 
+    command: # get vim-plug
+     curl -fLo ~/.vim/autoload/plug.vim --create-dirs 
+     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim 
+  - 
+    command: # add zenburn color scheme
+     curl -fLo ~/.vim/colors/zenburn.vim --create-dirs 
+     https://raw.githubusercontent.com/jnurmine/Zenburn/master/colors/zenburn.vim
