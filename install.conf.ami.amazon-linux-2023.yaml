@@ -15,11 +15,12 @@
       
 - shell:
   - 
-    command: # add local zshrc file for customization
-      touch ~/.zshrc_local
-  - 
     command: # install basic utilities
-      sudo dnf -y install docker zsh util-linux-user
+      sudo dnf -y update
+      sudo dnf -y install docker zsh htop util-linux-user
+      sudo service docker start
+      sudo systemctl enable docker
+      sudo usermod -a -G docker ec2-user
   - 
     command: # install oh my zsh, conditional on whether it's installed already
       if [[ -z "$ZSH" ]]; then
@@ -31,6 +32,9 @@
   - 
     command: # use zsh by default
       sudo chsh -s $(which zsh) $(whoami)
+  - 
+    command: # add local zshrc file for customization
+      touch ~/.zshrc_local
   - 
     command: # install powerlevel10k terminal theme if not installed already
       if ! test -d ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k; 
