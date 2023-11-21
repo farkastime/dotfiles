@@ -16,16 +16,18 @@
 - shell:
   - 
     command:
-      touch ~/.zshr_local
+      touch ~/.zshrc_local
   - 
     command:
       sudo dnf -y install docker zsh util-linux-user
   - 
-  command: # TODO: fix this it's not working
-      unset ZSH &&
-      if [! -d $HOME/.oh-my-zsh];
-        then sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    command: 
+      if [[ -z "$ZSH" ]]; then
+        echo ".oh-my-zsh does not exist!";
+        sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)";
       fi
+    stdout: true
+    stderr: true
   - 
     command:
       sudo chsh -s $(which zsh) $(whoami)
