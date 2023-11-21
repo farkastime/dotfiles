@@ -25,7 +25,7 @@
     command: # install oh my zsh, conditional on whether it's installed already
       if [[ -z "$ZSH" ]]; then
         echo ".oh-my-zsh does not exist!";
-        rm $HOME/.zshrc
+        rm $HOME/.zshrc;
         sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)";
       fi
     stdout: true
