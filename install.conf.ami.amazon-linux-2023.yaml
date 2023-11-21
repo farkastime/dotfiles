@@ -16,10 +16,10 @@
 - shell:
   - 
     command: # install basic utilities
-      sudo dnf -y update
-      sudo dnf -y install docker zsh htop util-linux-user
-      sudo service docker start
-      sudo systemctl enable docker
+      sudo dnf -y update &&
+      sudo dnf -y install docker zsh htop util-linux-user &&
+      sudo service docker start &&
+      sudo systemctl enable docker &&
       sudo usermod -a -G docker ec2-user
   - 
     command: # install oh my zsh, conditional on whether it's installed already
