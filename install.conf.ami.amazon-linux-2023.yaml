@@ -15,7 +15,7 @@
       sudo usermod -a -G docker ec2-user
   - 
     command: # install oh my zsh, conditional on whether it's installed already
-      rm $HOME/.zshrc &&
+      #      rm $HOME/.zshrc &&
       sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
   - 
     command: # use zsh by default
