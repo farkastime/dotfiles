@@ -16,7 +16,7 @@
 		"prefix": "`p",
 		"body": [
 			"```{python}",
-			"${1:#| label:}$0",
+			"#| label: $0",
 			"```"
 		],
 		"description": "Insert Python Code Chunk"
@@ -25,7 +25,7 @@
 		"prefix": "`r",
 		"body": [
 			"```{r}",
-			"${1:#| label:}$0",
+			"#| label: $0",
 			"```"
 		],
 		"description": "Insert R Code Chunk"
