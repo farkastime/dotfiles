@@ -9,3 +9,6 @@
     pager = cat
 [pull]
 	rebase = false
+[user]
+	name = Tim Farkas
+	email = timothy.farkas@gmail.com
