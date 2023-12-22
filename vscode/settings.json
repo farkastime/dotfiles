@@ -54,8 +54,8 @@
     "terminalAuthentication": false
   },
   "[julia]": {
-  "symbolCacheDownload": true,
-  "enableTelemetry": false
+    "symbolCacheDownload": true,
+    "enableTelemetry": false
   }, 
   "[terminal]": {
     "[integrated]": {
@@ -63,7 +63,7 @@
       "defaultProfile.linux": "zsh",
       "defaultProfile.osx": "zsh",
       "commandsToSkipShell": [
-      "language-julia.interrupt"
+        "language-julia.interrupt"
       ]
     }
   }, 
