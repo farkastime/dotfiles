@@ -6,9 +6,9 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # pyenv shell configuration
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
+#export PYENV_ROOT="$HOME/.pyenv"
+#export PATH="$PYENV_ROOT/bin:$PATH"
+#eval "$(pyenv init -)"
 
 # zsh configuration
 export ZSH="$HOME/.oh-my-zsh"
@@ -35,26 +35,14 @@ bindkey -M viins 'jk' vi-cmd-mode # map jk to ESC in zsh vi mode
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+# for vim themes
+export TERM=xterm-256color
+
 # direnv
-eval "$(direnv hook zsh)"
+#eval "$(direnv hook zsh)"
 
+# ssh agent
+eval $(ssh-agent) &>/dev/null
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/tim/miniforge3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/Users/tim/miniforge3/etc/profile.d/conda.sh" ]; then
-        . "/Users/tim/miniforge3/etc/profile.d/conda.sh"
-    else
-        export PATH="/Users/tim/miniforge3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-
-if [ -f "/Users/tim/miniforge3/etc/profile.d/mamba.sh" ]; then
-    . "/Users/tim/miniforge3/etc/profile.d/mamba.sh"
-fi
-# <<< conda initialize <<<
-
+# source local file
+source "$HOME/.zshrc_local"

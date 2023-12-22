@@ -14,13 +14,14 @@
     ~/.gitignore_global: gitignore_global
     ~/Library/Application Support/Code/User/settings.json: vscode/settings.json
     ~/Library/Application Support/Code/User/keybindings.json: vscode/keybindings.json
+    ~/Library/Application Support/Code/User/snippets/: vscode/snippets/
     ~/.p10k.zsh: themes/p10k.zsh
 
 - shell:
   #- brew bundle # don't do this automatically with install
   - 
     command:
-      cat ~/.dotfiles/vscode/extensions | xargs -L 1 code --install-extension
+      cat ~/.dotfiles/vscode/extensions.macos | xargs -L 1 code --install-extension
     stdout: true
     stderr: true
   - 
@@ -28,5 +29,10 @@
       if ! test -d ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k; 
       then git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k; 
       fi
+    stdout: true
+    stderr: true
+  - 
+    command: 
+      touch ~/.zshrc_local
     stdout: true
     stderr: true

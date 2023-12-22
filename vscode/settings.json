@@ -1,5 +1,6 @@
 {
     "notebook.lineNumbers": "on",
+    "vim.debug.loggingLevelForConsole": "debug",
     "vim.insertModeKeyBindings": [
         {
           "before": ["j", "k"],
@@ -15,5 +16,57 @@
       "workbench.colorTheme": "Oceanic Next (Sublime)",
       "security.workspace.trust.untrustedFiles": "open",
       "git.terminalAuthentication": false,
+      "yaml.schemas": {
+        "file:///Users/tfarkas/.vscode/extensions/atlassian.atlascode-3.0.3/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+      },
+      "atlascode.bitbucket.enabled": false,
+      "redhat.telemetry.enabled": false,
+      "atlascode.jira.jqlList": [
+        {
+          "id": "45edbbb6-2d12-427a-9451-4a2ed5ad0920",
+          "enabled": true,
+          "name": "My esource Issues",
+          "query": "assignee = currentUser() AND resolution = Unresolved ORDER BY lastViewed DESC",
+          "siteId": "dc949908-432e-4448-84d4-ae9ee8ae103f",
+          "monitor": true
+        }
+      ],
+      "terminal.integrated.inheritEnv": false,
+      "notebook.output.textLineLimit": 200,
+      "notebook.diff.ignoreOutputs": true,
+      "diffEditor.ignoreTrimWhitespace": false,
+      "typescript.suggest.paths": false,
+      "javascript.suggest.paths": false,
+      "workbench.startupEditor": "none",
+      "[quarto]": {
+        "editor.suggest.showSnippets": true,
+        "editor.snippetSuggestions": "inline"
+      },
+      "quarto.mathjax.theme": "dark",
+      "dvc.doNotShowCliUnavailable": true,
+      "jupyter.askForKernelRestart": false,
+      "path-autocomplete.disableUpOneFolder": false, 
+      "path-autocomplete.pathMappings": {
+        "workspace": "${workspace}",
+    },
+    "[python]": {
+      "editor.formatOnType": true,
+      "analysis.autoFormatStrings": true
+    },
+    "git.ignoreMissingGitWarning": true,
+    "git.autofetch": true,
+    "terminal.integrated.commandsToSkipShell": [
+      "language-julia.interrupt"
+    ],
+    "julia.symbolCacheDownload": true,
+    "julia.enableTelemetry": false,
+    "files.associations": {
+      "*.rmd": "markdown"
+    },
+    "security.workspace.trust.untrustedFiles": "open",
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "remote.SSH.connectTimeout": 60,
+    "window.zoomLevel": 1,
 }      
 
