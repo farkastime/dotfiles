@@ -2,7 +2,7 @@
   "[notebook]": {
     "lineNumbers": "on",
     "output.textLineLimit": 200,
-    "diff.ignoreOutputs": true,
+    "diff.ignoreOutputs": true
   }, 
   "[vim]": {
     "debug.loggingLevelForConsole": "debug",
@@ -11,7 +11,7 @@
         "before": ["j", "k"],
         "after": ["<Esc>", "l"]
       }
-    ],
+    ]
   },
   "tabnine.experimentalAutoImports": true,
   "files.associations": {
@@ -20,7 +20,7 @@
   },
   "[workbench]": {
     "colorTheme": "Oceanic Next (Sublime)",
-    "startupEditor": "none",
+    "startupEditor": "none"
   },
   "security.workspace.trust.untrustedFiles": "open",
   "yaml.schemas": {
@@ -34,15 +34,15 @@
   "[quarto]": {
     "editor.suggest.showSnippets": true,
     "editor.snippetSuggestions": "inline",
-    "mathjax.theme": "dark",
+    "mathjax.theme": "dark"
   },
   "dvc.doNotShowCliUnavailable": true,
   "jupyter.askForKernelRestart": false,
   "[path-autocomplete]": {
     "disableUpOneFolder": false, 
     "pathMappings": {
-      "workspace": "${workspace}",
-    },
+      "workspace": "${workspace}"
+    }
   },
   "[python]": {
     "editor.formatOnType": true,
@@ -51,11 +51,11 @@
   "[git]": {
     "ignoreMissingGitWarning": true,
     "autofetch": true,
-    "terminalAuthentication": false,
+    "terminalAuthentication": false
   },
   "[julia]": {
   "symbolCacheDownload": true,
-  "enableTelemetry": false,
+  "enableTelemetry": false
   }, 
   "[terminal]": {
     "[integrated]": {
@@ -64,10 +64,10 @@
       "defaultProfile.osx": "zsh",
       "commandsToSkipShell": [
       "language-julia.interrupt"
-      ],
-    },
+      ]
+    }
   }, 
   "remote.SSH.connectTimeout": 60,
-  "window.zoomLevel": 1,
+  "window.zoomLevel": 1
 }      
 
