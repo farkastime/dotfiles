@@ -6,13 +6,13 @@
   }, 
   "[vim]": {
     "debug.loggingLevelForConsole": "debug",
-    "insertModeKeyBindings": [
-      {
-        "before": ["j", "k"],
-        "after": ["<Esc>", "l"]
-      }
-    ]
   },
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "k"],
+      "after": ["<Esc>", "l"]
+    }
+  ],
   "tabnine.experimentalAutoImports": true,
   "files.associations": {
     "*.ejs": "html",
