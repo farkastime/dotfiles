@@ -7,5 +7,13 @@
         }
       ],
       "tabnine.experimentalAutoImports": true,
+      "files.associations": {
+        "*.ejs": "html",
+        "*.rmd": "markdown"
+      },
+      "window.zoomLevel": 1,
+      "workbench.colorTheme": "Oceanic Next (Sublime)",
+      "security.workspace.trust.untrustedFiles": "open",
+      "git.terminalAuthentication": false,
 }      
 
