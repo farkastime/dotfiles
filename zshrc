@@ -26,6 +26,9 @@ plugins=(git
 
 source $ZSH/oh-my-zsh.sh
 
+# Docker config
+export DOCKER_DEFAULT_PLATFORM=linux/amd64
+
 # custom keybindings
 bindkey -M viins 'jk' vi-cmd-mode # map jk to ESC in zsh vi mode
 
