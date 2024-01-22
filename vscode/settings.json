@@ -68,6 +68,7 @@
     }
   }, 
   "remote.SSH.connectTimeout": 60,
-  "window.zoomLevel": 1
+  "window.zoomLevel": 1,
+  "vsicons.dontShowNewVersionMessage": true
 }      
 

@@ -1,0 +1,32 @@
+# directory aliases
+alias margin='cd ~/Dropbox/1_Work/marginalia'
+alias website='cd ~/Dropbox/github-website/docs'
+alias rob='~/Dropbox/1_Work/1_Research/Rob\ Clark/'
+alias ada='~/Dropbox/3_Education/Courses/stat_528_ada2'   
+
+# function aliases
+
+# make enter directory
+mcd() {
+	mkdir "$1"
+	cd "$1"
+}
+
+blog() {
+    echo "Initialized an empty Blog repository in /Users/tim/blog/.blog/" >&2
+    git init > message.log
+    mcd blog 
+    mkdir .blog
+}
+
+# source env/bin/activate
+seba() {
+    source env/bin/activate
+}
+
+alias R='R --no-save --no-restore-data'
+
+# aws sso
+asl() {
+    aws sso login --profile "$1"
+}

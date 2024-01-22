@@ -8,6 +8,7 @@
 - link:
     ~/.vimrc: vimrc
     ~/.zshrc: zshrc
+    ~/.oh-my-zsh/custom/alias.zsh: alias
     ~/.Rprofile: Rprofile
     ~/.zprofile: zprofile
     ~/.gitconfig: gitconfig
