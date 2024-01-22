@@ -9,6 +9,5 @@
     pager = cat
 [pull]
 	rebase = false
-[user]
-	name = Tim Farkas
-	email = timothy.farkas@gmail.com
+[url "git@github.com:"]
+	insteadOf = https://github.com/
