@@ -64,11 +64,25 @@
       "defaultProfile.osx": "zsh",
       "commandsToSkipShell": [
         "language-julia.interrupt"
-      ]
+      ], 
+  //     "profiles.osx": {
+  //       "tmux-shell": {
+  //         "path": "tmux",
+  //         "args": ["new-session", "-A", "-s", "vscode:${workspaceFolder}"]
+  // }
+  //     }
     }
   }, 
   "remote.SSH.connectTimeout": 60,
   "window.zoomLevel": 1,
-  "vsicons.dontShowNewVersionMessage": true
+  "vsicons.dontShowNewVersionMessage": true,
+  "python.analysis.extraPaths": [],
+  "github.copilot.enable": {
+    "quarto": true,
+    "*": true
+  },
+  "github.copilot.editor.enableAutoCompletions": true,
+  "editor.fontFamily": "MesloLGS NF",
+  "quarto.render.previewType": "external"
 }      
 
