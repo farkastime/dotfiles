@@ -30,3 +30,8 @@ alias R='R --no-save --no-restore-data'
 asl() {
     aws sso login --profile "$1"
 }
+
+# utility aliases
+alias cls=clear
+alias python=python3
+alias pip=pip3
