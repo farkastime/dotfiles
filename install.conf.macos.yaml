@@ -1,28 +1,24 @@
 - defaults:
     link:
+      create: true
       relink: true
       force: true
 
 - clean: ['~']
 
-- link:
-    ~/.vimrc: vimrc
-    ~/.zshrc: zshrc
-    ~/.oh-my-zsh/custom/alias.zsh: alias
-    ~/.Rprofile: Rprofile
-    ~/.zprofile: zprofile
-    ~/.gitconfig: gitconfig
-    ~/.gitignore_global: gitignore_global
-    ~/Library/Application Support/Code/User/settings.json: vscode/settings.json
-    ~/Library/Application Support/Code/User/keybindings.json: vscode/keybindings.json
-    ~/Library/Application Support/Code/User/snippets/: vscode/snippets/
-    ~/.p10k.zsh: themes/p10k.zsh
-
-- shell:
-  #- brew bundle # don't do this automatically with install
+- shell: 
   - 
-    command:
-      cat ~/.dotfiles/vscode/extensions.macos | xargs -L 1 code --install-extension
+    command:  
+      if [ -z ${ZSH+x}]; then 
+        sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)";
+      else 
+        echo "oh-my-zsh already installed. skipping!";
+      fi
+    stdout: true
+    stderr: true
+  - 
+    command:  
+      brew bundle -v 
     stdout: true
     stderr: true
   - 
@@ -37,3 +33,17 @@
       touch ~/.zshrc_local
     stdout: true
     stderr: true
+    
+
+- link:
+    ~/.vimrc: vimrc
+    ~/.zshrc: zshrc
+    ~/.oh-my-zsh/custom/alias.zsh: alias
+    ~/.Rprofile: Rprofile
+    ~/.zprofile: zprofile
+    ~/.gitconfig: gitconfig
+    ~/.gitignore_global: gitignore_global
+    ~/Library/Application Support/Code/User/settings.json: vscode/settings.json
+    ~/Library/Application Support/Code/User/keybindings.json: vscode/keybindings.json
+    ~/Library/Application Support/Code/User/snippets/: vscode/snippets/
+    ~/.p10k.zsh: themes/p10k.zsh
