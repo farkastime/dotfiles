@@ -22,28 +22,31 @@
     stdout: true
     stderr: true
   - 
-    command: 
-      if ! test -d ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k; 
-      then git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k; 
+    command:
+      if ! test -f ~/.vim/autoload/plug.vim; then
+        curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim;
+      else echo "vim-plug already installed. skipping!";
       fi
     stdout: true
     stderr: true
   - 
-    command: 
-      touch ~/.zshrc_local
+    command:
+      if ! test -f ~/.vim/colors/zenburn.vim; then
+        curl -fLo ~/.vim/colors/zenburn.vim --create-dirs
+        https://raw.githubusercontent.com/jnurmine/Zenburn/refs/heads/master/colors/zenburn.vim;
+      else echo "zenburn vim theme already installed. skipping!";
+      fi
     stdout: true
     stderr: true
-    
-
 - link:
     ~/.vimrc: vimrc
     ~/.zshrc: zshrc
     ~/.oh-my-zsh/custom/alias.zsh: alias
-    ~/.Rprofile: Rprofile
     ~/.zprofile: zprofile
     ~/.gitconfig: gitconfig
     ~/.gitignore_global: gitignore_global
     ~/Library/Application Support/Code/User/settings.json: vscode/settings.json
     ~/Library/Application Support/Code/User/keybindings.json: vscode/keybindings.json
     ~/Library/Application Support/Code/User/snippets/: vscode/snippets/
-    ~/.p10k.zsh: themes/p10k.zsh
+    ~/.oh-my-zsh/custom/p10k.zsh: themes/p10k.zsh

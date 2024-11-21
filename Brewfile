@@ -6,11 +6,19 @@ brew "bat"
 brew "sqlite"
 brew "htop"
 brew "tree"
+brew "tldr"
 brew "vim"
 brew "python@3.9"
+brew "python@3.10"
+brew "python@3.11"
+brew "python@3.12"
+brew "python@3.13"
+brew "python@3"
+brew "powerlevel10k"
 
 
 # casks
+cask "miniforge"
 cask "visual-studio-code"
 cask "docker"
 cask "iterm2"
@@ -19,6 +27,7 @@ cask "1password"
 cask "1password-cli"
 cask "slack"
 cask "zoom"
+cask "font-meslo-for-powerlevel10k"
 
 # vscode extentions
 # vscode "christian-kohler.path-intellisense"
