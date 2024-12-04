@@ -38,7 +38,7 @@ export TERM=xterm-256color
 eval $(ssh-agent) &>/dev/null
 
 # source local file
-source "$HOME/.zshrc_local"
+# source "$HOME/.zshrc_local"
 
 # enable powerlevel10k -- config in custom automatically sourced
 source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
