@@ -42,3 +42,6 @@ source "$HOME/.zshrc_local"
 
 # enable powerlevel10k -- config in custom automatically sourced
 source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
+
+# alias thefuck
+eval $(thefuck --alias)
