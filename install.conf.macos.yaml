@@ -39,6 +39,15 @@
       fi
     stdout: true
     stderr: true
+# - link:
+#     ~/.Rprofile: Rprofile
+# - shell: 
+  - 
+    command:
+      # R -e 'install.packages("littler")'
+      R -e 'options("repos")'
+    stdout: true
+    stderr: true
 - link:
     ~/.vimrc: vimrc
     ~/.zshrc: zshrc
