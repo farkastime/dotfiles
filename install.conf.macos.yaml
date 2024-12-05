@@ -7,8 +7,8 @@
 - clean: ['~']
 
 - shell: 
-  - 
-    command:  
+  - # install oh-my-zsh package manager for zsh 
+    command: 
       if [ -z $ZSH]; then 
         sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)";
       else 
@@ -16,12 +16,12 @@
       fi
     stdout: true
     stderr: true
-  - 
+  - # install utilities via homebrew (see Brewfile)
     command:  
       brew bundle -v 
     stdout: true
     stderr: true
-  - 
+  - # install vim-plug plugin manager for vim
     command:
       if ! test -f ~/.vim/autoload/plug.vim; then
         curl -fLo ~/.vim/autoload/plug.vim --create-dirs
@@ -30,7 +30,7 @@
       fi
     stdout: true
     stderr: true
-  - 
+  - # install zenburn color palatte for vim
     command:
       if ! test -f ~/.vim/colors/zenburn.vim; then
         curl -fLo ~/.vim/colors/zenburn.vim --create-dirs
@@ -39,20 +39,21 @@
       fi
     stdout: true
     stderr: true
-  - 
+  - # install renv package to enable renv package management
     command:
       R -e 'install.packages("renv", repos=c(CRAN="https://cloud.r-project.org"))'
     stdout: true
     stderr: true
 - link:
-    ~/.vimrc: vimrc
-    ~/.zshrc: zshrc
     ~/.oh-my-zsh/custom/alias.zsh: alias
-    ~/.zprofile: zprofile
+    ~/.oh-my-zsh/custom/p10k.zsh: themes/p10k.zsh
+    ~/.docker/config.json: docker/config.json
     ~/.gitconfig: gitconfig
     ~/.gitignore_global: gitignore_global
     ~/.Rprofile: Rprofile
+    ~/.vimrc: vimrc
     ~/Library/Application Support/Code/User/settings.json: vscode/settings.json
     ~/Library/Application Support/Code/User/keybindings.json: vscode/keybindings.json
     ~/Library/Application Support/Code/User/snippets/: vscode/snippets/
-    ~/.oh-my-zsh/custom/p10k.zsh: themes/p10k.zsh
+    ~/.zprofile: zprofile
+    ~/.zshrc: zshrc
