@@ -3,16 +3,18 @@ tap "homebrew/bundle"
 
 # utilities
 brew "awscli"
-brew "bat"
-brew "cmatrix"
+brew "bat" # better cat
+brew "cmatrix" # some silly bs
 brew "docker-credential-helper"
-brew "dvc"
-brew "gdal"
+brew "dvc" # data version control
+brew "fribidi" # required for textshaping (R package)
+brew "gdal" # geospatial data
 brew "gh"
+brew "harfbuzz" # required for textshaping (R package)
 brew "htop"
 brew "jq"
 brew "node"
-brew "ponysay"
+brew "ponysay" # some silly bs
 brew "powerlevel10k"
 brew "pulumi"
 brew "python@3.9"
