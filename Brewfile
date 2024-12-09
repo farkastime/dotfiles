@@ -50,6 +50,7 @@ cask "miniforge"
 cask "postman"
 cask "slack"
 cask "visual-studio-code"
+cask "xquartz"
 cask "zoom"
 
 # vscode extentions
