@@ -51,6 +51,7 @@ cask "postman"
 cask "rstudio"
 cask "slack"
 cask "visual-studio-code"
+cask "vlc"
 cask "xquartz"
 cask "zoom"
 
