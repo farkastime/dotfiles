@@ -15,8 +15,8 @@ brew "htop"
 brew "jq"
 brew "node"
 brew "ponysay" # some silly bs
-brew "powerlevel10k"
-brew "pulumi"
+brew "powerlevel10k" # my zsh theme
+brew "pulumi" # infrastructure as code
 brew "python@3.9"
 brew "python@3.10"
 brew "python@3.11"
@@ -26,12 +26,12 @@ brew "python@3"
 brew "r"
 brew "speedtest-cli"
 brew "sqlite"
-brew "thefuck"
-brew "tldr"
-brew "tree"
+brew "thefuck" # correct cli typos
+brew "tldr" # better man pages
+brew "tree" # recursive ls 
 brew "udunits"
-brew "uvicorn"
-brew "vim"
+brew "uvicorn" # a webserver
+brew "vim" # text editing
 brew "wget"
 
 

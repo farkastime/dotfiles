@@ -39,11 +39,11 @@
       fi
     stdout: true
     stderr: true
-  - # install renv package to enable renv package management
-    command:
-      R -e 'install.packages("renv", repos=c(CRAN="https://cloud.r-project.org"))'
-    stdout: true
-    stderr: true
+  # - # install renv package to enable renv package management
+  #   command:
+  #     R -e 'install.packages("renv", repos=c(CRAN="https://cloud.r-project.org"))'
+  #   stdout: true
+  #   stderr: true
 - link:
     ~/.oh-my-zsh/custom/alias.zsh: alias
     ~/.oh-my-zsh/custom/p10k.zsh: themes/p10k.zsh
