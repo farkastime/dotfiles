@@ -59,12 +59,13 @@
   }, 
   "[terminal]": {
     "[integrated]": {
-      "inheritEnv": false,
-      "defaultProfile.linux": "zsh",
-      "defaultProfile.osx": "zsh",
       "commandsToSkipShell": [
         "language-julia.interrupt"
       ], 
+      "defaultProfile.linux": "zsh",
+      "defaultProfile.osx": "zsh",
+      "fontFamily": "MesloLGS NF", 
+      "inheritEnv": false,
   //     "profiles.osx": {
   //       "tmux-shell": {
   //         "path": "tmux",

@@ -41,7 +41,8 @@
     stderr: true
   - # install renv package to enable renv package management
     command:
-      R -e 'if (!require('renv')) install.packages("renv", repos=c(CRAN="https://cloud.r-project.org"))'
+      R -e 'if (!require('renv')) install.packages(c("renv"), repos=c(CRAN="https://cloud.r-project.org"))' &&
+      R -e 'if (!require('jsonlite')) install.packages(c("jsonlite"), repos=c(CRAN="https://cloud.r-project.org"))'
     stdout: true
     stderr: true
 - link:
