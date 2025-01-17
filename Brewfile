@@ -30,6 +30,7 @@ brew "thefuck" # correct cli typos
 brew "tldr" # better man pages
 brew "tree" # recursive ls 
 brew "udunits"
+brew "uv" # python dependency management in Rust
 brew "uvicorn" # a webserver
 brew "vim" # text editing
 brew "wget"
