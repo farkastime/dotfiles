@@ -5,6 +5,7 @@ tap "homebrew/bundle"
 brew "awscli"
 brew "bat" # better cat
 brew "cmatrix" # some silly bs
+brew "direnv" # directory specific environment variables
 brew "docker-credential-helper"
 brew "dvc" # data version control
 brew "fribidi" # required for textshaping (R package)

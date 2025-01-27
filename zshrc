@@ -32,7 +32,7 @@ bindkey -M viins 'jk' vi-cmd-mode # map jk to ESC in zsh vi mode
 export TERM=xterm-256color
 
 # direnv
-#eval "$(direnv hook zsh)"
+eval "$(direnv hook zsh)"
 
 # ssh agent
 eval $(ssh-agent) &>/dev/null
