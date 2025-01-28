@@ -40,6 +40,7 @@ brew "wget"
 # third-party apps
 cask "1password"
 cask "1password-cli"
+cask "alfred"
 cask "brave-browser"
 cask "dbeaver-community"
 cask "docker"
