@@ -56,6 +56,7 @@ cask "rstudio"
 cask "slack"
 cask "visual-studio-code"
 cask "vlc"
+cask "witch"
 cask "xquartz"
 cask "zoom"
 
