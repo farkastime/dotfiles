@@ -84,6 +84,8 @@
   "github.copilot.editor.enableAutoCompletions": true,
   "editor.fontFamily": "MesloLGS NF",
   "quarto.render.previewType": "external",
-  "svelte.enable-ts-plugin": true
+  "svelte.enable-ts-plugin": true,
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false
 }      
 
