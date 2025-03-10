@@ -34,6 +34,7 @@ brew "udunits"
 brew "uv" # python dependency management in Rust
 brew "uvicorn" # a webserver
 brew "vim" # text editing
+brew "vite" 
 brew "wget"
 
 
