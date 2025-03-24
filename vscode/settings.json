@@ -16,7 +16,8 @@
   "tabnine.experimentalAutoImports": true,
   "files.associations": {
     "*.ejs": "html",
-    "*.rmd": "markdown"
+    "*.rmd": "markdown",
+    "*.css": "tailwindcss"
   },
   "[workbench]": {
     "colorTheme": "Oceanic Next (Sublime)",
