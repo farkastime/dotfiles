@@ -28,6 +28,7 @@ brew "r"
 brew "speedtest-cli"
 brew "sqlite"
 brew "thefuck" # correct cli typos
+brew "tippecanoe" # vector tiles from geojson
 brew "tldr" # better man pages
 brew "tree" # recursive ls 
 brew "udunits"
