@@ -1,0 +1,40 @@
+# brew "awscli"
+brew "bat" # better cat
+brew "direnv" # directory specific environment variables
+# brew "docker-credential-helper"
+# brew "dvc" # data version control
+brew "eza" # ls replacement
+brew "fd" # find replacement
+# brew "fribidi" # required for textshaping (R package)
+# brew "gdal" # geospatial data
+brew "gh"
+# brew "harfbuzz" # required for textshaping (R package)
+brew "htop"
+brew "jq"
+# brew "node"
+brew "nvim"
+#brew "openapi-generator"
+# brew "pulumi" # infrastructure as code
+# brew "python@3.9"
+# brew "python@3.10"
+# brew "python@3.11"
+# brew "python@3.12"
+# brew "python@3.13"
+# brew "python@3"
+# brew "r"
+brew "ripgrep"
+# brew "speedtest-cli"
+brew "sqlite"
+brew "tealdeer" # man / tldr
+# brew "thefuck" # correct cli typos
+# brew "tippecanoe" # vector tiles from geojson
+# brew "tldr" # better man pages
+# brew "tmux"
+# brew "tree" # recursive ls 
+# brew "udunits"
+brew "ugrep" # replacement for grep
+# brew "uv" # python dependency management in Rust
+# brew "uvicorn" # a webserver
+# brew "vim" # text editing
+# brew "vite" 
+brew "zoxide"
