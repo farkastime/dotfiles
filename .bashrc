@@ -23,3 +23,9 @@ if [ -d ~/.bashrc.d ]; then
     done
 fi
 unset rc
+
+# Homebrew
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+# Zoxide
+eval "$(zoxide init bash)"
