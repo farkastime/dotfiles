@@ -28,8 +28,11 @@ unset rc
 set -o vi
 bind '"jk":vi-movement-mode'
 
-# Homebrew
+# homebrew
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
-# Zoxide
+# zoxide
 eval "$(zoxide init bash)"
+
+# direnv
+eval "$(direnv hook bash)"
