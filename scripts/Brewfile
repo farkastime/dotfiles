@@ -1,23 +1,23 @@
-# brew "awscli"
+brew "awscli"
 brew "bat" # better cat
 brew "direnv" # directory specific environment variables
 # brew "docker-credential-helper"
-# brew "dvc" # data version control
+brew "dvc" # data version control
 brew "eza" # ls replacement
 brew "fd" # find replacement
 # brew "fribidi" # required for textshaping (R package)
 brew "fzf"
 brew "gcc"
-# brew "gdal" # geospatial data
+brew "gdal" # geospatial data
 brew "gh"
 # brew "harfbuzz" # required for textshaping (R package)
 brew "htop"
 brew "jq"
 brew "lazygit"
-# brew "node"
+brew "node"
 brew "nvim"
-#brew "openapi-generator"
-# brew "pulumi" # infrastructure as code
+brew "openapi-generator"
+brew "pulumi" # infrastructure as code
 # brew "python@3.9"
 # brew "python@3.10"
 # brew "python@3.11"
@@ -37,10 +37,10 @@ brew "tealdeer" # man / tldr
 # brew "tree" # recursive ls 
 # brew "udunits"
 brew "ugrep" # replacement for grep
-# brew "uv" # python dependency management in Rust
-# brew "uvicorn" # a webserver
+brew "uv" # python dependency management in Rust
+brew "uvicorn" # a webserver
 # brew "vim" # text editing
-# brew "vite" 
+brew "vite" 
 brew "zoxide"
 
 cask "font-meslo-lg-nerd-font"
