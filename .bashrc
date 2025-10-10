@@ -36,3 +36,6 @@ eval "$(zoxide init bash)"
 
 # direnv
 eval "$(direnv hook bash)"
+
+# starship
+eval "$(starship init bash)"
