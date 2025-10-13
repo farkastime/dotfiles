@@ -1,0 +1,5 @@
+[user]
+	email = timothy.farkas@proton.me
+	name = farkastime
+[push]
+	autoSetupRemote = true
