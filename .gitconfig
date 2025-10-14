@@ -3,3 +3,5 @@
 	name = farkastime
 [push]
 	autoSetupRemote = true
+[pull]
+	rebase = false
