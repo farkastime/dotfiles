@@ -1,5 +1,6 @@
 brew "awscli"
 brew "bat" # better cat
+brew "brew-gem"
 brew "btop" # better htop
 brew "direnv" # directory specific environment variables
 # brew "docker-credential-helper"
@@ -18,6 +19,7 @@ brew "lazygit"
 brew "node"
 brew "nvim"
 brew "openapi-generator"
+brew "openssl"
 brew "pulumi" # infrastructure as code
 # brew "python@3.9"
 # brew "python@3.10"
@@ -27,6 +29,7 @@ brew "pulumi" # infrastructure as code
 # brew "python@3"
 # brew "r"
 brew "ripgrep"
+brew "ruby"
 # brew "speedtest-cli"
 brew "sqlite"
 brew "starship"
