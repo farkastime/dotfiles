@@ -8,8 +8,8 @@ com.slack.Slack # slack
 
 # rpms
 dnf install -y \
-  kitty \ 
-gcc-c++
+  kitty \
+  gcc-c++
 
 # create dotfiles bare repo
 if [[ ! -d "$HOME/.cfg" ]]; then
@@ -35,4 +35,6 @@ bash Miniforge3-$(uname)-$(uname -m).sh
 conda config --set auto_activate_base false
 
 # jekyll
-gem install jekyll bundler
+gem install \
+  jekyll \
+  bundler
