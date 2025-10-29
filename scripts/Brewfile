@@ -20,6 +20,8 @@ brew "node"
 brew "nvim"
 brew "openapi-generator"
 brew "openssl"
+brew "podman" # containers 
+brew "podman-compose"
 brew "pulumi" # infrastructure as code
 # brew "python@3.9"
 # brew "python@3.10"
