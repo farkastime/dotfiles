@@ -10,3 +10,6 @@ alias vim='nvim'
 # git
 alias gcam='git commit -am'
 alias gst='git status'
+
+# podman / docker
+alias docker='podman'

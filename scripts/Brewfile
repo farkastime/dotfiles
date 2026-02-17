@@ -3,6 +3,7 @@ brew "bat" # better cat
 brew "brew-gem"
 brew "btop" # better htop
 brew "direnv" # directory specific environment variables
+brew "docker-compose"
 # brew "docker-credential-helper"
 brew "dvc" # data version control
 brew "eza" # ls replacement
@@ -16,6 +17,8 @@ brew "gh"
 brew "htop"
 brew "jq"
 brew "lazygit"
+brew "luarocks"
+brew "mono"
 brew "node"
 brew "nvim"
 brew "openapi-generator"
@@ -36,6 +39,8 @@ brew "ruby"
 brew "sqlite"
 brew "starship"
 brew "tealdeer" # man / tldr
+tap "hashicorp/tap"
+brew "hashicorp/tap/terraform"
 # brew "thefuck" # correct cli typos
 # brew "tippecanoe" # vector tiles from geojson
 # brew "tldr" # better man pages
@@ -50,3 +55,4 @@ brew "vite"
 brew "zoxide"
 
 cask "font-meslo-lg-nerd-font"
+cask "quarto"
