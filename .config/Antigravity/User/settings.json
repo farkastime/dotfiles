@@ -1,0 +1,29 @@
+{
+    "workbench.colorTheme": "Tokyo Night",
+    "php.suggest.basic": false,
+    "php.validate.enable": false,
+    "emmet.excludeLanguages": [
+        "markdown",
+        "php"
+    ],
+    "git.autofetch": true,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "j",
+                "k"
+            ],
+            "after": [
+                "<Esc>",
+                "l"
+            ]
+        }
+    ],
+    "explorer.excludeGitIgnored": false,
+    "files.exclude": {
+        "**/.git": false,
+        "**/.gitignore": false,
+        "**/.DS_Store": true
+        // Ensure your .Renviron etc. ARE NOT listed here with 'true'
+    }
+}

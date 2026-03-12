@@ -1,0 +1,42 @@
+// Place your key bindings in this file to override the defaults
+[
+  {
+    "key": "ctrl+enter",
+    "command": "quarto.runCurrentCell",
+    "when": "editorTextFocus && !findInputFocussed && !replaceInputFocussed && editorLangId == 'quarto'"
+  },
+  {
+    "key": "ctrl+shift+enter",
+    "command": "extension.multiCommand.execute",
+    "args": {
+      "sequence": [
+        "quarto.runCurrentCell",
+        "quarto.goToNextCell"
+      ]
+    },
+    "when": "editorTextFocus && !findInputFocussed && !replaceInputFocussed && editorLangId == 'quarto'"
+  },
+  {
+    "key": "shift+cmd+enter",
+    "command": "-quarto.runCurrentCell",
+    "when": "editorTextFocus && !findInputFocussed && !replaceInputFocussed && editorLangId == 'quarto'"
+  },
+  {
+    "key": "ctrl+alt+p",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus",
+    "args": {
+      "langId": "quarto",
+      "name": "insertPythonChunk"
+    }
+  },
+  {
+    "key": "ctrl+alt+r",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus",
+    "args": {
+      "langId": "quarto",
+      "name": "insertRChunk"
+    }
+  }
+]
