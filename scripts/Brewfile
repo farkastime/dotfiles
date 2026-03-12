@@ -2,27 +2,31 @@ brew "awscli"
 brew "bat" # better cat
 brew "brew-gem"
 brew "btop" # better htop
+# brew "cmake"
 brew "direnv" # directory specific environment variables
 brew "docker-compose"
 # brew "docker-credential-helper"
 brew "dvc" # data version control
 brew "eza" # ls replacement
 brew "fd" # find replacement
-# brew "fribidi" # required for textshaping (R package)
+brew "fribidi" # required for textshaping (R package)
 brew "fzf"
 brew "gcc"
-brew "gdal" # geospatial data
+# brew "gdal" # geospatial data
 brew "gh"
-# brew "harfbuzz" # required for textshaping (R package)
+brew "harfbuzz" # required for textshaping (R package)
 brew "htop"
 brew "jq"
 brew "lazygit"
+brew "libpng"
 brew "luarocks"
 brew "mono"
 brew "node"
 brew "nvim"
 brew "openapi-generator"
+brew "opencode"
 brew "openssl"
+brew "pandoc"
 brew "podman" # containers 
 brew "podman-compose"
 brew "pulumi" # infrastructure as code
@@ -33,6 +37,7 @@ brew "pulumi" # infrastructure as code
 # brew "python@3.13"
 # brew "python@3"
 # brew "r"
+brew "r-rig"
 brew "ripgrep"
 brew "ruby"
 # brew "speedtest-cli"
