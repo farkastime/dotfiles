@@ -8,36 +8,43 @@ set -e
 
 # --- PACKAGE LIST ---
 PACKAGES=(
-    # Essential Build Tools
-    gcc
-    gcc-c++
-    make
-    cmake
-    pkg-config
+  # Essential Build Tools
+  gcc
+  gcc-c++
+  make
+  cmake
+  pkg-config
 
-    # R Spatial Stack (The "Big Five")
-    gdal
-    gdal-devel
-    proj-devel
-    geos-devel
-    sqlite-devel
-    udunits2-devel
+  # XML Development Tools
+  libxml2-devel
+  libxslt-devel
 
-    # Graphics & Typography (Required for ggplot2 / ragg)
-    harfbuzz-devel
-    fribidi-devel
-    freetype-devel
-    libpng-devel
-    libtiff-devel
-    libjpeg-turbo-devel
+  # Python Build Tools
+  python3-devel
 
-    # Network & HTML (Required for curl, xml2, rvest)
-    libcurl-devel
-    openssl-devel
-    libxml2-devel
+  # R Spatial Stack (The "Big Five")
+  gdal
+  gdal-devel
+  proj-devel
+  geos-devel
+  sqlite-devel
+  udunits2-devel
 
-    # Quarto / RMarkdown dependencies
-    pandoc
+  # Graphics & Typography (Required for ggplot2 / ragg)
+  harfbuzz-devel
+  fribidi-devel
+  freetype-devel
+  libpng-devel
+  libtiff-devel
+  libjpeg-turbo-devel
+
+  # Network & HTML (Required for curl, xml2, rvest)
+  libcurl-devel
+  openssl-devel
+  libxml2-devel
+
+  # Quarto / RMarkdown dependencies
+  pandoc
 )
 
 # --- EXECUTION ---
