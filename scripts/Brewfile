@@ -33,7 +33,7 @@ brew "pulumi" # infrastructure as code
 # brew "python@3.9"
 # brew "python@3.10"
 # brew "python@3.11"
-# brew "python@3.12"
+brew "python@3.12"
 # brew "python@3.13"
 # brew "python@3"
 # brew "r"
@@ -60,4 +60,3 @@ brew "vite"
 brew "zoxide"
 
 cask "font-meslo-lg-nerd-font"
-cask "quarto"
