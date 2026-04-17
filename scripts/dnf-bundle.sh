@@ -45,6 +45,12 @@ PACKAGES=(
 
   # Quarto / RMarkdown dependencies
   pandoc
+
+  # parallel computing
+  parallel
+
+  # java distributions
+  java-21-openjdk-devel # for react native builds
 )
 
 # --- EXECUTION ---
