@@ -1,0 +1,33 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ogrinfo:*)",
+      "Bash(head -1 /home/tim/projects/FireScapeCode/firescape-development/projects/la_plata_fire_risk_2026_03/elmfire/bbox_*/inputs_run_files/elmfire_*.data)",
+      "Bash(git add:*)",
+      "Bash(git commit -m ':*)",
+      "Bash(git commit:*)",
+      "Bash(git log:*)",
+      "Bash(grep -r \"ELMFIRE\\\\|elmfire\\\\|S3_SCRATCH\\\\|SCRATCH_DIR\" /home/tim/projects/FireScapeCode/firescape-backend/loaders/elmfire_engine* --include=\"*.py\" --include=\"*.sh\")",
+      "Bash(grep -r \"environ\\\\|getenv\\\\|BaseSettings\" /home/tim/projects/FireScapeCode/firescape-backend/loaders/common/*.py)",
+      "Bash(grep:*)",
+      "Bash(mkdir -p ~/.claude/commands)",
+      "Read(//home/tim/.claude/**)"
+    ],
+    "defaultMode": "auto"
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "/home/tim/.claude/statusline.sh"
+  },
+  "enabledPlugins": {
+    "typescript-lsp@claude-plugins-official": true,
+    "pyright-lsp@claude-plugins-official": true,
+    "superpowers@claude-plugins-official": true,
+    "frontend-design@claude-plugins-official": true
+  },
+  "alwaysThinkingEnabled": false,
+  "effortLevel": "high",
+  "tui": "default",
+  "editorMode": "vim",
+  "skipAutoPermissionPrompt": true
+}

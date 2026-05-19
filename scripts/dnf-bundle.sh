@@ -51,6 +51,9 @@ PACKAGES=(
 
   # java distributions
   java-21-openjdk-devel # for react native builds
+
+  # database
+  postgresql
 )
 
 # --- EXECUTION ---

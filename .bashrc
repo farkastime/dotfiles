@@ -75,4 +75,7 @@ export PATH="$HOME/gems/bin:$PATH"
 export ANDROID_HOME=~/Android
 export ANDROID_SDK_ROOT=~/Android
 export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME/emulator:$ANDROID_HOME/platform-tools
-export JAVA_HOME=/usr/lib/jvm/java-21-openjdk
+export JAVA_HOME=/usr/lib/jvm/java-21-temurin-jdk
+
+# opencode
+export PATH=/home/tim/.opencode/bin:$PATH
