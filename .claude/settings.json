@@ -29,5 +29,7 @@
   "effortLevel": "high",
   "tui": "default",
   "editorMode": "vim",
+  "remoteControlAtStartup": true,
+  "agentPushNotifEnabled": true,
   "skipAutoPermissionPrompt": true
 }

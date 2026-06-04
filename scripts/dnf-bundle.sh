@@ -54,13 +54,16 @@ PACKAGES=(
 
   # database
   postgresql
+
+  # misc
+  ccache
 )
 
 # --- EXECUTION ---
 
 echo "--- DNF BUNDLE SYNC ---"
-echo "Checking for system updates..."
-sudo dnf check-update || true
+echo "Upgrading system packages..."
+sudo dnf upgrade -y
 
 echo "Installing/Updating packages from list..."
 sudo dnf install -y "${PACKAGES[@]}"
