@@ -79,3 +79,12 @@ export JAVA_HOME=/usr/lib/jvm/java-21-temurin-jdk
 
 # opencode
 export PATH=/home/tim/.opencode/bin:$PATH
+
+# niri: rename the focused workspace on the fly (no args clears the name)
+wsname() {
+    if [ "$#" -eq 0 ]; then
+        niri msg action unset-workspace-name
+    else
+        niri msg action set-workspace-name "$*"
+    fi
+}

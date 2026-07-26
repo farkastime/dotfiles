@@ -44,8 +44,8 @@ brew "ruby"
 brew "sqlite"
 brew "starship"
 brew "tealdeer" # man / tldr
-tap "hashicorp/tap"
-brew "hashicorp/tap/terraform"
+# tap "hashicorp/tap"
+# brew "hashicorp/tap/terraform"
 # brew "thefuck" # correct cli typos
 # brew "tippecanoe" # vector tiles from geojson
 # brew "tldr" # better man pages
