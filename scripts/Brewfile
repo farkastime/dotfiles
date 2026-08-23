@@ -1,4 +1,5 @@
 brew "awscli"
+brew "azure-cli" # azure cli
 brew "bat" # better cat
 brew "brew-gem"
 brew "btop" # better htop

@@ -55,6 +55,16 @@ PACKAGES=(
   # database
   postgresql
 
+  # containers -- Docker CE, from Docker's own repo (see repo setup below).
+  # Podman is in the Brewfile instead: it is daemonless and runs rootless, so a
+  # user-space install works. Docker needs a root daemon and a systemd unit,
+  # which Homebrew on Linux cannot manage.
+  docker-ce
+  docker-ce-cli
+  containerd.io
+  docker-buildx-plugin
+  docker-compose-plugin
+
   # misc
   ccache
 )
@@ -62,10 +72,23 @@ PACKAGES=(
 # --- EXECUTION ---
 
 echo "--- DNF BUNDLE SYNC ---"
+
+# Docker CE is not in Fedora's repos. Add Docker's own before installing.
+if ! dnf repolist --enabled 2>/dev/null | grep -q docker-ce; then
+  echo "Adding Docker CE repository..."
+  sudo dnf config-manager addrepo --from-repofile=https://download.docker.com/linux/fedora/docker-ce.repo
+fi
+
 echo "Upgrading system packages..."
 sudo dnf upgrade -y
 
 echo "Installing/Updating packages from list..."
 sudo dnf install -y "${PACKAGES[@]}"
 
+echo "Enabling the Docker daemon..."
+sudo systemctl enable --now docker
+
 echo "System is in sync with bundle!"
+echo
+echo "Note: to run docker without sudo, add yourself to the docker group:"
+echo "  sudo usermod -aG docker \$USER   # then log out and back in"
