@@ -85,10 +85,17 @@ sudo dnf upgrade -y
 echo "Installing/Updating packages from list..."
 sudo dnf install -y "${PACKAGES[@]}"
 
-echo "Enabling the Docker daemon..."
-sudo systemctl enable --now docker
+# Socket activation: the daemon starts on the first docker command rather than
+# at boot, so restart-policy containers do not resurrect on every reboot.
+echo "Enabling Docker socket activation..."
+sudo systemctl enable --now docker.socket
+
+# Membership in the docker group is root-equivalent: it grants unsandboxed
+# access to the daemon. Podman is the rootless alternative already installed.
+if ! id -nG "$USER" | grep -qw docker; then
+  echo "Adding $USER to the docker group..."
+  sudo usermod -aG docker "$USER"
+  echo "Log out and back in for docker group membership to take effect."
+fi
 
 echo "System is in sync with bundle!"
-echo
-echo "Note: to run docker without sudo, add yourself to the docker group:"
-echo "  sudo usermod -aG docker \$USER   # then log out and back in"

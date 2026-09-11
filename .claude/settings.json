@@ -15,6 +15,7 @@
     ],
     "defaultMode": "auto"
   },
+  "model": "opus[1m]",
   "statusLine": {
     "type": "command",
     "command": "/home/tim/.claude/statusline.sh"
@@ -27,7 +28,7 @@
   },
   "alwaysThinkingEnabled": false,
   "effortLevel": "high",
-  "tui": "default",
+  "tui": "fullscreen",
   "skipWorkflowUsageWarning": true,
   "editorMode": "vim",
   "remoteControlAtStartup": true,
@@ -60,5 +61,6 @@
       "**Org-specific CLIs**: None configured",
       "routine under firescape-development/ prefix qualifiers apply to git, make, and pre-commit operations"
     ]
-  }
+  },
+  "cleanupPeriodDays": 36500
 }
